@@ -1,0 +1,69 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy: #0A1628;
+  --navy-mid: #152340;
+  --sand: #F0E6D3;
+  --coral: #FF6B47;
+  --coral-dark: #e05530;
+  --teal: #4ECDC4;
+  --light: #FAFAF8;
+  --muted: #6B7A99;
+  --border: #E2E8F0;
+  --card-bg: #ffffff;
+  --shadow-sm: 0 2px 8px rgba(10,22,40,0.08);
+  --shadow-md: 0 8px 32px rgba(10,22,40,0.12);
+  --shadow-lg: 0 20px 60px rgba(10,22,40,0.18);
+  --radius: 16px;
+  --radius-sm: 8px;
+  font-size: 16px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--light);
+  color: var(--navy);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+a { text-decoration: none; color: inherit; }
+
+img { max-width: 100%; display: block; }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
